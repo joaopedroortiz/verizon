@@ -8,4 +8,5 @@ org/apache/sling/scripting/sightly/apps/verizon/custom_components/gradient/gradi
 org/apache/sling/scripting/sightly/apps/verizon/components/helloworld/helloworld__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/components/xfpage/content__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/components/xfpage/customheaderlibs__002e__html.class
+org/apache/sling/scripting/sightly/apps/verizon/custom_components/contact/contact__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/custom_components/header/header__002e__html.class
