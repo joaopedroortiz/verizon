@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Verizon - UI config
+Content-Package-Roots: /apps/verizon/osgiconfig
+Implementation-Version: V.0.0.1.
+Build-Jdk-Spec: 1.8
+Content-Package-Type: container
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: br.com.company:verizon.ui.config:V.0.0.1
+Content-Package-Description: UI config package for Verizon
+

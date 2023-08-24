@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Bundle-Category: Verizon
+Bundle-Description: Core bundle for Verizon
+Bundle-ManifestVersion: 2
+Bundle-Name: Verizon - Core
+Bundle-SymbolicName: verizon.core
+Bundle-Version: 0.0.0.V001
+Export-Package: br.com.company.verizon.core.filters;version="1.0";uses
+ :="javax.servlet",br.com.company.verizon.core.listeners;version="1.0"
+ ;uses:="org.apache.sling.api.resource.observation",br.com.company.ver
+ izon.core.models;version="1.0";uses:="javax.annotation,org.apache.sli
+ ng.api.resource,org.apache.sling.models.annotations,org.apache.sling.
+ models.annotations.injectorspecific",br.com.company.verizon.core.sche
+ dulers;version="1.0",br.com.company.verizon.core.servlets;version="1.
+ 0";uses:="javax.servlet,org.apache.sling.api,org.apache.sling.api.ser
+ vlets"
+Import-Package: javax.annotation;version="0.0.0",br.com.company.verizo
+ n.core.filters;version="[1.0,2)",br.com.company.verizon.core.listener
+ s;version="[1.0,2)",br.com.company.verizon.core.schedulers;version="[
+ 1.0,2)",br.com.company.verizon.core.servlets;version="[1.0,2)",com.da
+ y.cq.wcm.api;version="[1.29,2)",javax.servlet;version="[2.6,3)",org.a
+ pache.sling.api;version="[2.3,3)",org.apache.sling.api.request;versio
+ n="[2.7,3)",org.apache.sling.api.resource;version="[2.13,3)",org.apac
+ he.sling.api.resource.observation;version="[1.2,2)",org.apache.sling.
+ api.servlets;version="[2.4,3)",org.apache.sling.models.annotations;ve
+ rsion="[1.5,2)",org.apache.sling.models.annotations.injectorspecific;
+ version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.5.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/br.com.company.verizon.core.filters.Loggin
+ gFilter.xml,OSGI-INF/br.com.company.verizon.core.listeners.SimpleReso
+ urceListener.xml,OSGI-INF/br.com.company.verizon.core.schedulers.Simp
+ leScheduledTask.xml,OSGI-INF/br.com.company.verizon.core.servlets.Sim
+ pleServlet.xml
+Sling-Model-Classes: br.com.company.verizon.core.models.HelloWorldMode
+ l
+

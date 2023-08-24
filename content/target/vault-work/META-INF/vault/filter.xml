@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/verizon" mode="merge"/>
+    <filter root="/content/verizon" mode="merge"/>
+    <filter root="/content/verizon/tarifario" mode="merge"/>
+    <filter root="/content/dam/verizon/" mode="merge"/>
+    <filter root="/content/dam/verizon/logo-marca" mode="merge"/>
+    <filter root="/content/experience-fragments/verizon" mode="merge"/>
+</workspaceFilter>

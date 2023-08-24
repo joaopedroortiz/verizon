@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Verizon - All
+Content-Package-Roots: /apps/verizon-packages,/apps/verizon-vendor-pac
+ kages
+Implementation-Version: V.0.0.1.
+Build-Jdk-Spec: 1.8
+Content-Package-Type: container
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: br.com.company:verizon.all:V.0.0.1
+Content-Package-Description: All content package for Verizon
+

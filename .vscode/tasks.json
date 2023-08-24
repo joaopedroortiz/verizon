@@ -1,0 +1,101 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    /* ---------- Build Author All ---------- */
+    {
+      "label": "-----> Build Author All",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "mvn clean install -PautoInstallSinglePackage",
+      "problemMatcher": []
+    },
+    /* ---------- Build Publish - All ---------- */
+    {
+      "label": "-----> Build Publish - All",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "mvn clean install -PautoInstallSinglePackagePublish",
+      "problemMatcher": []
+    },
+    /* ---------- Build Core ---------- */
+    {
+      "label": "---> Build Core",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd core && mvn clean install -PautoInstallBundle -X",
+      "problemMatcher": []
+    },
+    /* ---------- Build Apps ---------- */
+    {
+      "label": "---> Build Apps",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd apps && mvn clean install -PautoInstallPackage",
+      "problemMatcher": []
+    },
+    /* ---------- Build Content ---------- */
+    {
+      "label": "---> Build Content",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd content && mvn clean install -PautoInstallPackage",
+      "problemMatcher": []
+    },
+    /* ---------- Build Core & Apps ---------- */
+    {
+      "label": "---> Build Core & Apps",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd core && mvn clean install -PautoInstallBundle; cd ../apps && mvn clean install -PautoInstallPackage",
+      "problemMatcher": []
+    },
+    /* ---------- Delete All Target Folders ---------- */
+    {
+      "label": "-> Delete All Target Folders ",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "mvn clean",
+      "problemMatcher": []
+    },
+    /* ---------- Maven Tests All ---------- */
+    {
+      "label": "-> Maven Tests All",
+      "type": "shell",
+      "command": "cd frontend && npm run test:local_with_aem",
+      "group": "test",
+      "presentation": {
+        "panel": "new",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+  ]
+}

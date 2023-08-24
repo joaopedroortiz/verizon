@@ -1,0 +1,95 @@
+{
+  "id":"br.com.company:verizon.all:slingosgifeature:user-aggregated-publish:V.0.0.1.",
+  "bundles":[
+    {
+      "id":"br.com.company:verizon.core:V.0.0.1.",
+      "feature-origins":"br.com.company:verizon.all:slingosgifeature:V.0.0.1.",
+      "start-order":"20",
+      "content-package-origins":"br.com.company:verizon.all:V.0.0.1"
+    }
+  ],
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      ":configurator:content-package-origins":"br.com.company:verizon.all:V.0.0.1|br.com.company:verizon.ui.config:V.0.0.1",
+      "resource.resolver.mapping":[
+        "/content/verizon/</",
+        "/:/"
+      ],
+      ":configurator:feature-origins-resource.resolver.mapping":[
+        "br.com.company:verizon.all:slingosgifeature:publish:V.0.0.1."
+      ],
+      ":configurator:feature-origins":[
+        "br.com.company:verizon.all:slingosgifeature:publish:V.0.0.1."
+      ]
+    },
+    "org.apache.sling.commons.log.LogManager.factory.config~verizon":    {
+      ":configurator:content-package-origins":"br.com.company:verizon.all:V.0.0.1|br.com.company:verizon.ui.config:V.0.0.1",
+      "org.apache.sling.commons.log.names":[
+        "br.com.company.verizon"
+      ],
+      "org.apache.sling.commons.log.level":"INFO",
+      "org.apache.sling.commons.log.file":"logs/error.log",
+      "org.apache.sling.commons.log.additiv":"false",
+      ":configurator:feature-origins-org.apache.sling.commons.log.names":[
+        "br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.file":[
+        "br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.level":[
+        "br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.additiv":[
+        "br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+      ],
+      ":configurator:feature-origins":[
+        "br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+      ]
+    }
+  },
+  "assembled-features:ARTIFACTS|TRANSIENT":[
+    "br.com.company:verizon.all:slingosgifeature:publish:V.0.0.1.",
+    "br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+  ],
+  "repoinit:TEXT|true":[
+    "create path (sling:OrderedFolder) /content/dam/verizon",
+    "create path (nt:unstructured) /content/dam/verizon/jcr:content",
+    "set properties on /content/dam/verizon/jcr:content",
+    "  set cq:conf{String} to /conf/verizon",
+    "  set jcr:title{String} to \"Verizon\"",
+    "end"
+  ],
+  "content-packages:ARTIFACTS|true":[
+    {
+      "id":"br.com.company:verizon.ui.config:zip:cp2fm-converted:V.0.0.1",
+      "feature-origins":"br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+    },
+    {
+      "id":"br.com.company:verizon.ui.apps:zip:cp2fm-converted:V.0.0.1",
+      "feature-origins":"br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+    },
+    {
+      "id":"br.com.company:verizon.ui.content:zip:cp2fm-converted:V.0.0.1",
+      "feature-origins":"br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+    },
+    {
+      "id":"br.com.company:verizon.all:zip:cp2fm-converted:V.0.0.1",
+      "feature-origins":"br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+    }
+  ],
+  "api-regions:JSON|false":[
+    {
+      "name":"global",
+      "exports":[
+        "br.com.company.verizon.core.filters",
+        "br.com.company.verizon.core.listeners",
+        "br.com.company.verizon.core.models",
+        "br.com.company.verizon.core.schedulers",
+        "br.com.company.verizon.core.servlets"
+      ],
+      "feature-origins":[
+        "br.com.company:verizon.all:slingosgifeature:V.0.0.1."
+      ]
+    }
+  ]
+}

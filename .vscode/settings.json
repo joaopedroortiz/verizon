@@ -1,0 +1,17 @@
+{
+  "prettier.singleQuote": false,
+  "yaml.format.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.embeddedLanguageFormatting": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "files.exclude": {
+    "all": true,
+    "apps.structure": true,
+    "archetype.properties": true,
+    "LICENSE": true,
+  }
+}

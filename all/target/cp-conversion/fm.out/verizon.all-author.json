@@ -1,0 +1,36 @@
+{
+  "id":"br.com.company:verizon.all:slingosgifeature:author:V.0.0.1.",
+  "configurations":  {
+    "com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider~verizon":    {
+      "mobile.resourceTypes":[
+        "verizon/components/page"
+      ],
+      "README":"Indicate which page resource types should display the mobile emulators.",
+      ":configurator:content-package-origins":"br.com.company:verizon.all:V.0.0.1|br.com.company:verizon.ui.config:V.0.0.1"
+    },
+    "com.adobe.granite.cors.impl.CORSPolicyImpl~verizon":    {
+      "alloworigin":[
+        "http://localhost:3000"
+      ],
+      "allowedpaths":[
+        "/(content|conf)/verizon.*"
+      ],
+      "supportedheaders":[
+        "Authorization",
+        "Origin",
+        "Accept",
+        "X-Requested-With",
+        "Content-Type",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers"
+      ],
+      "supportedmethods":[
+        "GET",
+        "HEAD"
+      ],
+      "alloworiginregexp":[
+      ],
+      ":configurator:content-package-origins":"br.com.company:verizon.all:V.0.0.1|br.com.company:verizon.ui.config:V.0.0.1"
+    }
+  }
+}

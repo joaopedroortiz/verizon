@@ -1,0 +1,5 @@
+#File edited by the Apache Sling Content Package to Sling Feature converter
+#Wed Aug 23 18:48:43 BRT 2023
+publish=verizon.all-publish.json
+author=verizon.all-author.json
+(default)=verizon.all.json

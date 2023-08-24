@@ -1,0 +1,12 @@
+{
+  "id":"br.com.company:verizon.all:slingosgifeature:publish:V.0.0.1.",
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/verizon/</",
+        "/:/"
+      ],
+      ":configurator:content-package-origins":"br.com.company:verizon.all:V.0.0.1|br.com.company:verizon.ui.config:V.0.0.1"
+    }
+  }
+}

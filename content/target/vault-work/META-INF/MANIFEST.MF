@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: Verizon - UI content
+Content-Package-Roots: /conf/verizon,/content/dam/verizon,/content/dam
+ /verizon/logo-marca,/content/experience-fragments/verizon,/content/ve
+ rizon,/content/verizon/tarifario
+Implementation-Version: V.0.0.1.
+Content-Package-Dependencies-Locations: br.com.company:verizon.ui.apps
+ :V.0.0.1=maven:br.com.company:verizon.ui.apps:V.0.0.1.:zip
+Content-Package-Dependencies: br.com.company:verizon.ui.apps:V.0.0.1
+Build-Jdk-Spec: 1.8
+Content-Package-Type: content
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: br.com.company:verizon.ui.content:V.0.0.1
+Content-Package-Description: UI content package for Verizon
+

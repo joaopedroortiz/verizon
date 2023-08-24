@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Verizon - Repository Structure Package</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="name">verizon.ui.apps.structure</entry>
+<entry key="created">2023-08-23T21:48:32.471Z</entry>
+<entry key="groupId">br.com.company</entry>
+<entry key="version">V.0.0.1.</entry>
+<entry key="packageType">mixed</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="group">br.com.company</entry>
+<entry key="description">Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
+        Any roots in the Code packages of this project should have their parent enumerated in the Filters list below.</entry>
+<entry key="artifactId">verizon.ui.apps.structure</entry>
+</properties>

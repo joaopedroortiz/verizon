@@ -1,0 +1,7 @@
+br/com/company/verizon/core/filters/LoggingFilterTest.class
+br/com/company/verizon/core/models/HelloWorldModelTest.class
+br/com/company/verizon/core/schedulers/SimpleScheduledTaskTest.class
+br/com/company/verizon/core/listeners/SimpleResourceListenerTest.class
+br/com/company/verizon/core/servlets/SimpleServletTest.class
+br/com/company/verizon/core/testcontext/AppAemContext.class
+br/com/company/verizon/core/testcontext/AppAemContext$1.class
