@@ -1,7 +1,11 @@
 org/apache/sling/scripting/sightly/apps/verizon/custom_components/exemplo_multifield_com_htl_puro/exemplo_multifield_com_htl_puro__002e__html.class
+org/apache/sling/scripting/sightly/apps/verizon/custom_components/form/form__002e__html.class
+org/apache/sling/scripting/sightly/apps/verizon/custom_components/footer/footer__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/components/page/customheaderlibs__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/components/xfpage/customfooterlibs__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/components/page/customfooterlibs__002e__html.class
+org/apache/sling/scripting/sightly/apps/verizon/custom_components/gradient/gradient__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/components/helloworld/helloworld__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/components/xfpage/content__002e__html.class
 org/apache/sling/scripting/sightly/apps/verizon/components/xfpage/customheaderlibs__002e__html.class
+org/apache/sling/scripting/sightly/apps/verizon/custom_components/header/header__002e__html.class

@@ -7,7 +7,18 @@
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
-
+               <button cq-msm-lockable="./button"
+                       fieldDescription="Insert Button Text"
+                       fieldLabel="Button Text"
+                       jcr:primaryType="nt:unstructured"
+                       name="./button"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <buttonpath cq-msm-lockable="./buttonpath"
+                           fieldDescription="Path to the button link"
+                           fieldLabel="Button Path"
+                           jcr:primaryType="nt:unstructured"
+                           name="./buttonpath"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
         </items>
     </content>
 </jcr:root>
