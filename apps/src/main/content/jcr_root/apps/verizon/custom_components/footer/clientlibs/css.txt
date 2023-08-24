@@ -1,4 +1,2 @@
 #base=css
-file1.css
-file2.css
-file3.css
+style.css
