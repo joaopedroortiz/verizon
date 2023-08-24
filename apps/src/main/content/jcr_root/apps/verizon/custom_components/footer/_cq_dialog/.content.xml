@@ -1,13 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Demo"
+    jcr:title="Footer"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
-
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <firstButton
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Primeiro Botão"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                         <button cq-msm-lockable="./button"
+                       fieldDescription="Texto do Primeiro Botão"
+                       fieldLabel="Texto do Primeiro Botão"
+                       jcr:primaryType="nt:unstructured"
+                       name="./footerFirstButton"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                            <firstButtonPath cq-msm-lockable="./buttonpath"
+                           fieldDescription=""
+                           fieldLabel="Path do Primeiro Botão"
+                           jcr:primaryType="nt:unstructured"
+                           name="./firstButtonPath"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                                  <type
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                deleteHint="{Boolean}false"
+                                name="./firstType"
+                                vertical="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <firstRadioPrimary
+                                        jcr:primaryType="nt:unstructured"
+                                        checked="{Boolean}true"
+                                        text="Primary"
+                                        value="button-primary"/>
+                                    <firstRadioSecondary
+                                        jcr:primaryType="nt:unstructured"
+                                        checked="{Boolean}false"
+                                        text="Secondary"
+                                        value="button-secondary"/>
+                                    <firstRadioTertiary
+                                        jcr:primaryType="nt:unstructured"
+                                        checked="{Boolean}false"
+                                        text="Tertiary"
+                                        value="button-tertiary"/>
+                                    </items>
+                                 </type>
+                        </items>
+                    </firstButton>
+                    <secondButton
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Segundo Botão"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                        <button cq-msm-lockable="./button"
+                       fieldDescription="Texto do Segundo Botão"
+                       fieldLabel="Texto do Segundo Botão"
+                       jcr:primaryType="nt:unstructured"
+                       name="./footerSecondButton"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                         <secondButtonPath cq-msm-lockable="./buttonpath"
+                           fieldDescription=""
+                           fieldLabel="Path do Segundo Botão"
+                           jcr:primaryType="nt:unstructured"
+                           name="./secondButtonPath"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                                  <type
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                deleteHint="{Boolean}false"
+                                name="./secondType"
+                                vertical="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <secondRadioPrimary
+                                        jcr:primaryType="nt:unstructured"
+                                        checked="{Boolean}true"
+                                        text="Primary"
+                                        value="button-primary"/>
+                                    <secondRadioSecondary
+                                        jcr:primaryType="nt:unstructured"
+                                        checked="{Boolean}false"
+                                        text="Secondary"
+                                        value="button-secondary"/>
+                                    <secondRadioTertiary
+                                        jcr:primaryType="nt:unstructured"
+                                        checked="{Boolean}false"
+                                        text="Tertiary"
+                                        value="button-tertiary"/>
+                                    </items>
+                                 </type>
+                        </items>
+                    </secondButton>
+                </items>
+            </tabs>
         </items>
     </content>
 </jcr:root>

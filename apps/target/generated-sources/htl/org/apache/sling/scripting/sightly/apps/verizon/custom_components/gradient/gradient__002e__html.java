@@ -35,7 +35,7 @@ public final class gradient__002e__html extends RenderUnit {
 // Main Template Body -----------------------------------------------------------------------------
 
 Object _dynamic_properties = bindings.get("properties");
-out.write("<div class=\"bar\">\n<div class=\"internal-box\">\n\n    <a");
+out.write("<div class=\"bar\">\n<div class=\"gradient-internal-box\">\n\n    <a");
 {
     Object var_attrvalue0 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "buttonpath");
     {

@@ -35,7 +35,7 @@ public final class header__002e__html extends RenderUnit {
 // Main Template Body -----------------------------------------------------------------------------
 
 Object _dynamic_properties = bindings.get("properties");
-out.write("<div class=\"main\">\n     <div class=\"internal-box\">\n\n          <div>\n               <img");
+out.write("<div class=\"main\">\n     <div class=\"header-internal-box\">\n\n          <div>\n               <img");
 {
     Object var_attrvalue0 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "logo"), "uri");
     {
