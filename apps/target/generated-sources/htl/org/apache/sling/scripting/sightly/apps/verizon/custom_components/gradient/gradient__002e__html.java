@@ -56,10 +56,31 @@ out.write("<div class=\"bar\">\n<div class=\"gradient-internal-box\">\n\n    <a"
         }
     }
 }
-out.write(" class=\"textbox\">\n        <div class=\"link\">\n            <img src=\"/content/dam/signupform/back.png\" alt=\"&lt;&lt;\" class=\"icon\"/>\n            <p class=\"linktext\">");
+out.write(" class=\"textbox\">\n        <div class=\"link\">\n            <img");
 {
-    Object var_4 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "button"), "text");
-    out.write(renderContext.getObjectModel().toString(var_4));
+    Object var_attrvalue4 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "arrow");
+    {
+        Object var_attrcontent5 = renderContext.call("xss", var_attrvalue4, "uri");
+        {
+            boolean var_shoulddisplayattr7 = (((null != var_attrcontent5) && (!"".equals(var_attrcontent5))) && ((!"".equals(var_attrvalue4)) && (!((Object)false).equals(var_attrvalue4))));
+            if (var_shoulddisplayattr7) {
+                out.write(" src");
+                {
+                    boolean var_istrueattr6 = (var_attrvalue4.equals(true));
+                    if (!var_istrueattr6) {
+                        out.write("=\"");
+                        out.write(renderContext.getObjectModel().toString(var_attrcontent5));
+                        out.write("\"");
+                    }
+                }
+            }
+        }
+    }
+}
+out.write(" alt=\"&lt;&lt;\" class=\"icon\"/>\n            <p class=\"linktext\">");
+{
+    Object var_8 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "button"), "text");
+    out.write(renderContext.getObjectModel().toString(var_8));
 }
 out.write("</p>\n        </div>\n    </a>\n</div>\n</div>\n<div class=\"progressbar\">\n    <div></div>\n</div>");
 

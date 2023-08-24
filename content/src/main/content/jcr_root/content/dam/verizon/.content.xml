@@ -3,4 +3,8 @@
     jcr:primaryType="sling:OrderedFolder">
     <jcr:content/>
     <Logo-marca.png/>
+    <Search.png/>
+    <Shopping_cart.png/>
+    <Verizon_logo.png/>
+    <Vector.png/>
 </jcr:root>

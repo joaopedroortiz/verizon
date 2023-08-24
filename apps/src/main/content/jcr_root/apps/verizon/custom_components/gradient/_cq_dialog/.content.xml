@@ -7,6 +7,11 @@
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
+                <arrow cq-msm-lockable="./arrow"
+                     fieldLabel="Seta"
+                     jcr:primaryType="nt:unstructured"
+                     name="./arrow"
+                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
                <button cq-msm-lockable="./button"
                        fieldDescription="Insert Button Text"
                        fieldLabel="Button Text"

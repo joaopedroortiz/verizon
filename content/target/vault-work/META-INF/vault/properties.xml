@@ -5,7 +5,7 @@
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="name">verizon.ui.content</entry>
 <entry key="acHandling">merge</entry>
-<entry key="created">2023-08-23T21:48:41.420Z</entry>
+<entry key="created">2023-08-24T13:21:13.698Z</entry>
 <entry key="groupId">br.com.company</entry>
 <entry key="dependencies-locations">br.com.company:verizon.ui.apps:V.0.0.1=maven:br.com.company:verizon.ui.apps:V.0.0.1.:zip</entry>
 <entry key="version">V.0.0.1.</entry>

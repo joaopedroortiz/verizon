@@ -35,7 +35,7 @@ public final class contact__002e__html extends RenderUnit {
 // Main Template Body -----------------------------------------------------------------------------
 
 Object _dynamic_properties = bindings.get("properties");
-out.write("<div class=\"form\">\n    <div class=\"form-internal-box\">\n        <p class=\"form-title\">");
+out.write("<div class=\"contact\">\n    <div class=\"contact-internal-box\">\n        <p class=\"form-title\">");
 {
     String var_0 = (("\n      " + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "title"), "text"))) + "\n        ");
     out.write(renderContext.getObjectModel().toString(var_0));
@@ -45,7 +45,7 @@ out.write("</p>\n        <p class=\"form-topic\">");
     Object var_1 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "subtitle"), "text");
     out.write(renderContext.getObjectModel().toString(var_1));
 }
-out.write("</p>\n\n    \n        <div class=\"flex-box\">\n            <div");
+out.write("</p>\n        <div class=\"flex-box\">\n            <div");
 {
     Object var_attrvalue2 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "telemovel");
     {

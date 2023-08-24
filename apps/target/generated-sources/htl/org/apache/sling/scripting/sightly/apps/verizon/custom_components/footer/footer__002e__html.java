@@ -103,7 +103,7 @@ out.write("</a>\n        </button>\n\n        <button");
         }
     }
 }
-out.write(" type=\"submit\" form=\"form\">\n            <a class=\"text\"");
+out.write(" type=\"submit\" form=\"form\" onblur=\"(validation())\">\n            <a class=\"text\"");
 {
     Object var_attrvalue13 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "secondButtonPath");
     {

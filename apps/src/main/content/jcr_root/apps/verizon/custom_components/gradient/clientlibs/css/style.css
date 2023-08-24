@@ -5,7 +5,16 @@
   margin: 1rem -1rem 0rem -1rem;
   display: flex;
   justify-content: center;
+  @media all and (max-width: 1120px) {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: none;
 }
+}
+
+
 
 .textbox {
   display: flex;
@@ -13,8 +22,8 @@
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 10px;
+  height: 16px;
 }
 
 .link {

@@ -8,6 +8,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    @media all and (max-width: 1120px) {
+        padding: 0px 12px;
+
+        @media all and (max-width: 768px) {
+            height: 168px;
+            align-items: stretch;
+          }
+     
+    }
+
+
+
 }
 
 .footer-internal-box{
@@ -16,6 +28,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media all and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: space-evenly;
+        }
 }
 
 .button-primary{
@@ -29,6 +45,9 @@
     padding: 0px 40px;
     cursor: pointer;
     font-weight: 500;
+    @media all and (max-width: 768px) {
+        width: 100%;
+        }
 
 }
 
@@ -43,6 +62,9 @@
     padding: 0px 40px;
     cursor: pointer;
     font-weight: 500;
+    @media all and (max-width: 768px) {
+        width: 100%;
+        }
 }
 
 .button-tertiary{
@@ -54,4 +76,7 @@
     font-weight: 500;
     background: rgba(0,0,0,0);
     border: none;
+    @media all and (max-width: 768px) {
+        width: 100%;
+        }
 }
