@@ -81,6 +81,16 @@
                           jcr:primaryType="nt:unstructured"
                           name="./hamburger"
                           sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+            <close cq-msm-lockable="./close"
+                  fieldLabel="Close Icon"
+                  jcr:primaryType="nt:unstructured"
+                  name="./close"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                   <arrow cq-msm-lockable="./arrow"
+                     fieldLabel="Seta"
+                     jcr:primaryType="nt:unstructured"
+                     name="./arrow"
+                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
         </items>
     </content>
 </jcr:root>

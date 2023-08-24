@@ -5,7 +5,7 @@ justify-content: center;
 align-items: center;
 height: 489px;
 @media all and (max-width: 1120px) {
-    height: 568px;
+    height: 700px;
     }
 }
 
@@ -16,7 +16,7 @@ height: 489px;
     @media all and (max-width: 1120px) {
     margin-top: 0;
     padding: 0px 24px;
-    height: 568px;
+    height: 700px;
     }
 }
 
@@ -78,6 +78,7 @@ width: 50%;
 }
 
 .error{
+    display: block;
     color: #D52B1E;
     font-size: 16px;
     font-weight: 400;
@@ -85,15 +86,6 @@ width: 50%;
     width: 200%;
 }
 
-.display-none{
+.error-none{
     display: none;
-}
-
-.error-input{
-width: calc(100% - 10px);
-height: 48px;
-background-color:  #EFEFF1;
-border: 1px solid #D52B1E;
-margin-top: 15px;
-margin-bottom: 30px;
 }

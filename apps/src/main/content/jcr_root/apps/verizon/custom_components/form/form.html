@@ -29,15 +29,15 @@
             </div>
             <div class="input-container">
                 <p class="form-label-description">Introduza o seu número de identificação</p>
-                <input class="input" type="text" placeholder="Ex: 1234567">
+                <input class="input" type="number" placeholder="Ex: 1234567">
             </div>
         </div>
 
         <div class="flex-box">
             <div class="input-container">
                 <p class="form-label-description">Introduza o seu NIF:</p>
-                <input id="NIF" class="input" type="text" placeholder="Ex: 1234567">
-                <p class="error">NIF inválido. Por favor introduza um NIF válido com 9 dígitos.</p>
+                <input onblur="validate()" id="nif" class="input" type="number" placeholder="Ex: 1234567">
+                <p class="error-none">NIF inválido. Por favor introduza um NIF válido com 9 dígitos.</p>
             </div>
             <div class="input-container">
             </div>

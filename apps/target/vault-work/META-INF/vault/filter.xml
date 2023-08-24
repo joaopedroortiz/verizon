@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<workspaceFilter version="1.0">
-    <filter root="/apps/verizon/clientlibs"/>
-    <filter root="/apps/verizon/components"/>
-    <filter root="/apps/verizon/custom_components"/>
-    <filter root="/apps/verizon/i18n"/>
-</workspaceFilter>

@@ -5,18 +5,49 @@
                <img src="${properties.logo @ context='uri'}" alt="Verizon Logo" class="logo" />
           </div>
           <div class="links">
-               <a class="title" href="${properties.aboutuspath}">${properties.aboutus @ context='html'}</a>
-               <a class="title" href="${properties.productspath}">${properties.products @ context='html'}</a>
-               <a class="title" href="${properties.storepath}">${properties.store @ context='html'}</a>
-               <a class="title" href="${properties.helppath}">${properties.help @ context='html'}</a>
+               <a class="title-link" href="${properties.aboutuspath}">${properties.aboutus @ context='html'}</a>
+               <a class="title-link" href="${properties.productspath}">${properties.products @ context='html'}</a>
+               <a class="title-link" href="${properties.storepath}">${properties.store @ context='html'}</a>
+               <a class="title-link" href="${properties.helppath}">${properties.help @ context='html'}</a>
                <a href="${properties.cartpath}">
                     <img src="${properties.cart @ context='uri'}" alt="cart" class="icon" />
                </a>
                <img src="${properties.search @ context='uri'}" alt="search" class="icon" />
           </div>
-          <div class="mobilelinks">
-               <img src="${properties.search @ context='uri'}" alt="search" class="icon" />
-               <img src="${properties.hamburger @ context='uri'}" alt="hamburger" class="icon" />
+          <div class="mobile-menu-button">
+               <img src="${properties.search @ context='uri'}" alt="search" class="mobile-menu-icon" />
+               <img onclick="menuShow()" src="${properties.hamburger @ context='uri'}" alt="hamburger" class="mobile-menu-icon" />
+          </div>
+     </div>
+
+     <div class="mobile-menu">
+
+          <div class="mobile-link-box">
+               <a class="mobile-link" href="${properties.aboutuspath}">${properties.aboutus @ context='html'}</a>
+               <img src="${properties.arrow}" class="arrow" alt="">
+          </div>
+
+          <div class="mobile-link-box">
+               <a class="mobile-link" href="${properties.productspath}">${properties.products @ context='html'}</a>
+               <img src="${properties.arrow}" class="arrow" alt="">
+          </div>
+
+          <div class="mobile-link-box">
+               <a class="mobile-link" href="${properties.storepath}">${properties.store @ context='html'}</a>
+               <img src="${properties.arrow}" class="arrow" alt="">
+          </div>
+
+          <div class="mobile-link-box">
+               <a class="mobile-link" href="${properties.helppath}">${properties.help @ context='html'}</a>
+               <img src="${properties.arrow}" class="arrow" alt="">
+          </div>
+
+          <div class="mobile-link-box">
+               <a class="mobile-link" href="${properties.cartpath}">
+                    <img src="${properties.cart @ context='uri'}" alt="cart" class="icon" />
+               </a>
+               <img src="${properties.arrow}" class="arrow" alt="">
           </div>
      </div>
 </div>
+
