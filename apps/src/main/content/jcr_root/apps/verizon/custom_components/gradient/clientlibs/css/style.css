@@ -7,10 +7,9 @@
   justify-content: center;
   @media all and (max-width: 1120px) {
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    width: none;
+    padding-left: 48px;
+    @media all and (max-width: 768px) {
+      padding-left: 0px;
 }
 }
 
@@ -45,6 +44,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media all and (max-width: 768px) {
+    justify-content: space-evenly;
+}
 }
 
 .progressbar {
